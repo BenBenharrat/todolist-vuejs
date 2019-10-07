@@ -1,6 +1,6 @@
 <template>
   <div>
-    <TodoListInputText />
+    <TodoListInputText v-model="newTodoText" />
     <TodoListItem :todos="todos" />
   </div>
 </template>
@@ -16,6 +16,7 @@ export default {
     },
     data() {
       return {
+        newTodoText:"toto",
         todos: ["Tomato", "Milk", "Butter"]
       };
     }

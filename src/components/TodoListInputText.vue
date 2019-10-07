@@ -1,5 +1,5 @@
 <template>
-  <h1 class="title">Hello World!!!</h1>
+  <input class="input is-rounded" type="text" placeholder="Add task">
 </template>
 
 <script>

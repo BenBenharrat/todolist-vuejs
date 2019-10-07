@@ -9,6 +9,11 @@ export default {
     components: {
         TodoListInputText,
     },
+    data() {
+      return {
+        todos: ["Tomato", "Milk", "Butter"]
+      }
+    },
 };
 </script>
 

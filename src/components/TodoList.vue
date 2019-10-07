@@ -1,19 +1,24 @@
 <template>
-  <TodoListInputText />
+  <div>
+    <TodoListInputText />
+    <TodoListItem :todos="todos" />
+  </div>
 </template>
 
 <script>
 import TodoListInputText from '@/components/TodoListInputText.vue';
+import TodoListItem from '@/components/TodoListItem.vue';
 
 export default {
     components: {
         TodoListInputText,
+        TodoListItem
     },
     data() {
       return {
         todos: ["Tomato", "Milk", "Butter"]
-      }
-    },
+      };
+    }
 };
 </script>
 

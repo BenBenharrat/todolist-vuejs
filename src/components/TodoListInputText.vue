@@ -1,8 +1,10 @@
 <template>
-  <div class="control has-icons-left has-icons-right">
+  <div class="control has-icons-left has-icons-right">    
     <input class="input is-rounded"
      type="text" 
-     placeholder="Add task" :value="value" v-on="listeners">
+     placeholder="Add task" 
+     :value="value" 
+     v-on="listeners">
     <span class="icon is-left">
         <i class="fas fa-check"></i>
     </span>

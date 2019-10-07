@@ -1,6 +1,8 @@
 <template>
   <div class="control has-icons-left has-icons-right">
-    <input class="input is-rounded" type="text" placeholder="Add task">
+    <input class="input is-rounded"
+     type="text" 
+     placeholder="Add task" :value="value" v-on="listeners">
     <span class="icon is-left">
         <i class="fas fa-check"></i>
     </span>
@@ -8,7 +10,17 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: ["value"],
+  computed: {
+    listeners() {
+      return {
+        ...this.$listeners,
+        input: event => this.$emit("input", event.target.value)
+      };
+    }
+  },
+}
 </script>
 
 <style>

@@ -1,9 +1,15 @@
 <template>
-  <h1 class="title">Hello World!</h1>
+  <TodoListInputText />
 </template>
 
 <script>
-export default {};
+import TodoListInputText from '@/components/TodoListInputText.vue';
+
+export default {
+    components: {
+        TodoListInputText,
+    },
+};
 </script>
 
 <style>
